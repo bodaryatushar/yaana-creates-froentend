@@ -1,4 +1,4 @@
-export const MENUITEMS = [
+const MENUITEMS1 = [
    {
       title: 'Home', type: 'sub', children: [
          {
@@ -207,5 +207,12 @@ export const MENUITEMS = [
          { path: '/blogs/blog_detail', title: 'blog detail', type: 'link' },
       ]
    },
+]
+
+export const MENUITEMS = [
+   { title: 'Home', path: '/' },
+   { title: 'About us', path: '/page/about-us', title: 'about-us', type: 'link'},
+   { title: "FAQ's", path: '/page/faq' },
+   { title: 'Contact us',path: '/page/account/contact' }
 ]
 

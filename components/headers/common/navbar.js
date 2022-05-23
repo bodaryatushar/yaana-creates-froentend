@@ -147,12 +147,14 @@ const NavBar = () => {
                   key={i}
                   className={` ${menuItem.megaMenu ? "mega-menu" : ""}`}
                 >
-                  <a className="nav-link" onClick={(e) => openMblNav(e)}>
-                    {" "}
-                    {t(menuItem.title)}
-                    <span className="sub-arrow"></span>
-                  </a>
-                  {menuItem.children && !menuItem.megaMenu ? (
+                  <Link href={menuItem.path}>
+                    <a className="nav-link">
+                      {" "}
+                      {t(menuItem.title)}
+                      {/* <span className="sub-arrow"></span> */}
+                    </a>
+                  </Link>
+                  {/* {menuItem.children && !menuItem.megaMenu ? (
                     <ul className="nav-submenu">
                       {menuItem.children.map((childrenItem, index) => {
                         return (
@@ -305,7 +307,7 @@ const NavBar = () => {
                         ""
                       )}
                     </div>
-                  )}
+                  )} */}
                 </li>
               );
             })}

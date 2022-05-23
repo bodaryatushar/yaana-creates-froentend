@@ -18,8 +18,8 @@ const MasterParallaxBanner = ({
               <Col>
                 <div className="banner-contain">
                   <h2>{title}</h2>
-                  <h3>{subTitle1}</h3>
-                  <h4>{subTitle2}</h4>
+                  <h3 style={{color: '#ddd'}}>{subTitle1}</h3>
+                  <h4 style={{color: '#ddd'}}>{subTitle2}</h4>
                 </div>
               </Col>
             </Row>

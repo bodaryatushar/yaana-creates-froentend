@@ -88,10 +88,10 @@ const LeftSidebarPage = ({ pathId }) => {
         <Container>
           <Row>
             <Col sm="3" className="collection-filter">
-              <Filter />
+              {/* <Filter /> */}
               <Service />
               {/* <!-- side-bar single product slider start --> */}
-              <NewProduct />
+              {/* <NewProduct /> */}
               {/* <!-- side-bar single product slider end --> */}
             </Col>
             <Col lg="9" sm="12" xs="12">
@@ -155,7 +155,7 @@ const LeftSidebarPage = ({ pathId }) => {
                   </Row>
                 )}
               </Container>
-              <ProductTab />
+              {/* <ProductTab /> */}
             </Col>
           </Row>
         </Container>

@@ -40,11 +40,6 @@ const MasterProductDetail = ({
           </del>
         </h4>
 
-        {product.variants.map((vari) => {
-          var findItem = uniqueTags.find((x) => x.color === vari.color);
-          if (!findItem) uniqueTags.push(vari);
-        })}
-
         {product.type === "jewellery" ||
         product.type === "nursery" ||
         product.type === "beauty" ||
@@ -55,7 +50,7 @@ const MasterProductDetail = ({
           ""
         ) : (
           <>
-            {title !== "Product style 4" && uniqueTags[0].color ? (
+            {title !== "Product style 4" && (
               <ul className="color-variant">
                 {uniqueTags.map((vari, i) => {
                   return (
@@ -70,8 +65,6 @@ const MasterProductDetail = ({
                   );
                 })}
               </ul>
-            ) : (
-              ""
             )}
           </>
         )}

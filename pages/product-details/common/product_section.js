@@ -104,20 +104,21 @@ const ProductSection = () => {
                       <div className="img-wrapper">
                         <div className="front">
                           <a href={null}>
-                            <Media
-                              onClick={() => clickProductDetail(product)}
-                              src={product.images[0].src}
+                          <img
+                              src={product.images[1].src}
                               className="img-fluid blur-up lazyload bg-img"
                               alt=""
+                              style={{height: '220px', width:'170px'}}
                             />
                           </a>
                         </div>
                         <div className="back">
                           <a href={null}>
-                            <Media
+                            <img
                               src={product.images[1].src}
                               className="img-fluid blur-up lazyload bg-img"
                               alt=""
+                              style={{height: '220px', width:'170px'}}
                             />
                           </a>
                         </div>
@@ -170,11 +171,6 @@ const ProductSection = () => {
                           {symbol}
                           {product.price}
                         </h4>
-                        <ul className="color-variant">
-                          <li className="bg-light0"></li>
-                          <li className="bg-light1"></li>
-                          <li className="bg-light2"></li>
-                        </ul>
                       </div>
                     </div>
                   </Col>

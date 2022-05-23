@@ -40,12 +40,6 @@ const DetailsWithPrice = ({ item, stickyClass, changeColorVar }) => {
           {symbol}
           {product.price - (product.price * product.discount) / 100}
         </h3>
-        {product.variants.map((vari) => {
-          var findItem = uniqueColor.find((x) => x.color === vari.color);
-          if (!findItem) uniqueColor.push(vari);
-          var findItemSize = uniqueSize.find((x) => x === vari.size);
-          if (!findItemSize) uniqueSize.push(vari.size);
-        })}
         {changeColorVar === undefined ? (
           <>
             {uniqueColor ? (
@@ -83,19 +77,7 @@ const DetailsWithPrice = ({ item, stickyClass, changeColorVar }) => {
         <div className="product-description border-product">
           {product.variants ? (
             <div>
-              <h6 className="product-title size-text">
-                select size
-                <span>
-                  <a
-                    href={null}
-                    data-toggle="modal"
-                    data-target="#sizemodal"
-                    onClick={toggle}
-                  >
-                    size chart
-                  </a>
-                </span>
-              </h6>
+              
               <Modal isOpen={modal} toggle={toggle} centered>
                 <ModalHeader toggle={toggle}>Sheer Straight Kurta</ModalHeader>
                 <ModalBody>

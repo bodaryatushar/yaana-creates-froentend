@@ -20,12 +20,12 @@ const Fashion = () => {
     <>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href={"/assets/images/favicon/1.png"} />
+        <link rel="icon" type="image/x-icon" href={"/assets/images/icon/logo.png"} />
       </Helmet>
       {/* <ModalComponent /> */}
-      {/* <HeaderOne logoName={"logo.png"} topClass="top-header" /> */}
+      <HeaderOne logoName={"logo.png"} topClass="top-header" />
       <Banner />
-      <CollectionBanner />
+      {/* <CollectionBanner /> */}
       <Paragraph
         title="title1 section-t-space"
         inner="title-inner1"
@@ -42,6 +42,8 @@ const Fashion = () => {
         noSlider="false"
         cartClass="cart-info cart-wrap"
       />
+      <ServiceLayout sectionClass="border-section small-section" />
+
       <Parallax />
       <SpecialProducts
         type="fashion"
@@ -54,12 +56,6 @@ const Fashion = () => {
         noSlider="true"
         cartClass="cart-info cart-wrap"
       />
-      <ServiceLayout sectionClass="border-section small-section" />
-      <Blog type="fashion" title="title1" inner="title-inner1" />
-      <Instagram type="fashion" />
-      <div className="section-b-space">
-        <LogoBlock />
-      </div>
       <MasterFooter
         footerClass={`footer-light`}
         footerLayOut={"light-layout upper-footer"}

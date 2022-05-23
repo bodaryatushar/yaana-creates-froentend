@@ -10,59 +10,7 @@ import {
   Button,
 } from "reactstrap";
 
-const faqData = [
-  {
-    qus: "What is Yaana Creats return policy?",
-    ans: [
-      "Our 100% buyer protection program allows for easy returns Only for products not as per description/photo on the website and products which you received in damaged/defective/broken condition.",
-      "All products must be returned in their original condition along with the bills and labels."
-    ]
-  },
-  {
-    qus: "How to raise dispute for an order?",
-    ans: [
-      "You can raise a dispute within 7 days of delivery, in either of by sending an email to support@yaanacreats.com with images of broken/defective/damaged products within 7 days of delivery, please mention your order number in the email and sign into your Yaana Creats account if you are a registered customer (Easy method).",
-      "Product After 7 days Of Delivery Return Can not accepted."
-    ]
-  },
-  {
-    qus: "When will i be refunded?",
-    ans: [
-      "Reverse pickup orders We will initiate refund once the item is picked up by our courier partner.",
-      "Self ship orders We will refund when your item back from warehouse. The refund amount wii be credited within 3 to 5 working days in your Yaana Creats Acoount."
-    ]
-  },
-  {
-    qus: "What are the shipping charges?",
-    ans: [
-      "Delivery charge varies with each product. Most of product FREE delivery in India.",
-      "Some items may have a shipping cost depending on the product."
-    ]
-  },
-  {
-    qus: "What is the estimated delivery time?",
-    ans: [
-      "The estimated time of delivery is within 7 working days for domestic orders and 15-20 working days for international orders. All orders get shipped within 4 to 5 days from the warehouse."
-    ]
-  },
-  {
-    qus: "How will the delivery be done?",
-    ans: [
-      "We try to process all deliveries through reputed courier companies like Bluedart, Aramex,E-come, DTDC, DHL and Fedex. In some cases, your pincode is not serviceable by these courier companies, we use Indian Speed Post for those deliveries."
-    ]
-  },
-  {
-    qus: "How are items packaged?",
-    ans: [
-      "All items are carefully packaged as to avoid any form of damage."
-    ]
-  },
-  {
-    qus: "Who would be responsible for paying local taxes in countries outside of India?",
-    ans: [
-      "Customs duty & other international taxes etc. if applicable will have to be borne by the customer according to the laws of the land."
-    ]
-  },
+const paymentPolicyData = [
   {
     qus: "How do i pay for a Yaana Creats purchase?",
     ans: [
@@ -74,6 +22,12 @@ const faqData = [
     qus: "Can i make a credit/debit card or Internet Banking payment through my mobile?",
     ans: [
       "Yes, you can make credit card payments through the Yaana Creats mobile site. Yaana Creats uses 256-bit encryption technology to protect your card information while securely transmitting it to the secure and trusted payment gateways managed by leading banks."
+    ]
+  },
+  {
+    qus: "Does Craftsvilla store my credit card information?",
+    ans: [
+      "No, Yaana Creats does not collect or store your account information at all. Your transaction is authorized at multiple points, first by EBS/CCavenue and subsequently by Visa/MasterCard/Amex secure directly without any information passing through us."
     ]
   }
 ];
@@ -118,7 +72,7 @@ const FaqList = ({ faq }) => {
 const FaqPage = () => {
   return (
     <>
-      <CommonLayout parent="home" title="faq">
+      <CommonLayout parent="home" title="Payment Policy">
         <section className="faq-section section-b-space">
           <Container>
             <Row>
@@ -127,7 +81,7 @@ const FaqPage = () => {
                   className="accordion theme-accordion"
                   id="accordionExample"
                 >
-                  {faqData.map((faq, i) => (
+                  {paymentPolicyData.map((faq, i) => (
                     <FaqList faq={faq} key={i} />
                   ))}
                 </div>

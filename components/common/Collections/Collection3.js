@@ -177,7 +177,7 @@ const TopCollection = ({
                   data.products.items.slice(0, 8).map((product, index) => (
                     <Col xl="3" sm="6" key={index}>
                       <div>
-                        <ProductItems
+                        {/* <ProductItems
                           product={product}
                           backImage={backImage}
                           addCompare={() => comapreList.addToCompare(product)}
@@ -186,7 +186,7 @@ const TopCollection = ({
                           cartClass={cartClass}
                           addCart={() => context.addToCart(product, quantity)}
                           key={index}
-                        />
+                        /> */}
                       </div>
                     </Col>
                   ))

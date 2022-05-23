@@ -56,7 +56,7 @@ const MasterFooter = ({
                       <div>
                         <h4>KNOW IT ALL FIRST!</h4>
                         <p>
-                          Never Miss Anything From Multikart By Signing Up To
+                          Never Miss Anything From YaanaCreats By Signing Up To
                           Our Newsletter.
                         </p>
                       </div>
@@ -112,9 +112,6 @@ const MasterFooter = ({
                       <LogoImage logo={logoName} />
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Ut enim ad minim veniam,
                     </p>
                     <div className="footer-social">
                       <ul>
@@ -122,14 +119,6 @@ const MasterFooter = ({
                           <a href="https://www.facebook.com" target="_blank">
                             <i
                               className="fa fa-facebook"
-                              aria-hidden="true"
-                            ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://plus.google.com" target="_blank">
-                            <i
-                              className="fa fa-google-plus"
                               aria-hidden="true"
                             ></i>
                           </a>
@@ -145,11 +134,6 @@ const MasterFooter = ({
                               className="fa fa-instagram"
                               aria-hidden="true"
                             ></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://rss.com" target="_blank">
-                            <i className="fa fa-rss" aria-hidden="true"></i>
                           </a>
                         </li>
                       </ul>
@@ -182,25 +166,21 @@ const MasterFooter = ({
                     <div className="footer-contant">
                       <ul>
                         <li>
-                          <Link href={`/shop/left_sidebar`}>
-                            <a>womens</a>
+                          <Link href={`/page/account/login`}>
+                            <a>Account</a>
                           </Link>
                         </li>
                         <li>
-                          <Link href={`/shop/left_sidebar`}>
-                            <a> clothing </a>
+                          <Link href={`/page/account/cart`}>
+                            <a> My Cart </a>
                           </Link>
                         </li>
                         <li>
-                          <Link href={`/shop/left_sidebar`}>
-                            <a>accessories</a>
+                          <Link href={`/page/account/wishlist`}>
+                            <a>Wishlist</a>
                           </Link>
                         </li>
-                        <li>
-                          <Link href={`/shop/left_sidebar`}>
-                            <a> featured </a>
-                          </Link>
-                        </li>
+                        
                       </ul>
                     </div>
                   </Collapse>
@@ -221,7 +201,7 @@ const MasterFooter = ({
                         } else setIsOpen(true);
                       }}
                     >
-                      why we choose
+                      Policies
                       <span className="according-menu"></span>
                     </h4>
                   </div>
@@ -231,19 +211,19 @@ const MasterFooter = ({
                     <div className="footer-contant">
                       <ul>
                         <li>
-                          <a href="#">shipping & return</a>
+                          <a href="/page/privacy-policy">Privacy Policy</a>
                         </li>
                         <li>
-                          <a href="#">secure shopping</a>
+                          <a href="/page/payment-policy">Payment Policy</a>
                         </li>
                         <li>
-                          <a href="#">gallary</a>
+                          <a href="/page/return-policy">Return Policy</a>
                         </li>
                         <li>
-                          <a href="#">affiliates</a>
+                          <a href="/page/shipping-policy">Shipping Policy</a>
                         </li>
                         <li>
-                          <a href="#">contacts</a>
+                          <a href="/page/terms-condition">Terms & condition</a>
                         </li>
                       </ul>
                     </div>
@@ -275,18 +255,14 @@ const MasterFooter = ({
                     <div className="footer-contant">
                       <ul className="contact-list">
                         <li>
-                          <i className="fa fa-map-marker"></i>Multikart Demo
-                          Store, Demo store India 345-659
+                          <i className="fa fa-map-marker"></i>F80-81, Ground Floor, Avadh Textile Marhet, Opp. new Bombay Market, Umarawada, Surat - 395010
                         </li>
                         <li>
-                          <i className="fa fa-phone"></i>Call Us: 123-456-7898
+                          <i className="fa fa-phone"></i>Call Us: +91 909 - 913 - 2531
                         </li>
                         <li>
                           <i className="fa fa-envelope-o"></i>Email Us:{" "}
-                          <a href="#">Support@Fiot.com</a>
-                        </li>
-                        <li>
-                          <i className="fa fa-fax"></i>Fax: 123456
+                          <a href="#">yaanacreats@gmail.com</a>
                         </li>
                       </ul>
                     </div>

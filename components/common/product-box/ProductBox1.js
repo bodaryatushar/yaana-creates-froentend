@@ -62,11 +62,7 @@ const ProductItem = ({
           {product.sale === true ? <span className="lable4">on sale</span> : ""}
         </div>
         <div className="front" onClick={clickProductDetail}>
-          <Media
-            src={`${image ? image : product.images[0].src}`}
-            className="img-fluid"
-            alt=""
-          />
+          <img src={`${image ? image : product.images[0].src}`} className="img-fluid" style={{ width: '255px', height: '340px'}} />
         </div>
         {backImage ? (
           product.images[1] === "undefined" ? (

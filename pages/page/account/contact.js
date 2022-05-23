@@ -6,30 +6,30 @@ const Data = [
   {
     img: "fa-phone",
     title: "Contact us",
-    desc1: "+91 123 - 456 - 7890",
-    desc2: "+86 163 - 451 - 7894",
+    desc1: "+91 909 - 913 - 2531",
   },
   {
     img: "fa-map-marker",
     title: "ADDRESS",
-    desc1: "ABC Complex,Near xyz, New York",
-    desc2: "USA 123456",
+    desc1: "F80-81, Grounf Floor",
+    desc2: "Avadh Textile Market",
+    desc3: "Opp. New Bombay Market",
+    desc4: "Umarawada, Surat-395010",
   },
   {
     img: "fa-envelope-o",
     title: "ADDRESS",
-    desc1: "Support@Shopcart.com",
-    desc2: "info@shopcart.com",
+    desc1: "yaanacreats@gmail.com",
   },
-  {
-    img: "fa-fax",
-    title: "fax",
-    desc1: "Support@Shopcart.com",
-    desc2: "info@shopcart.com",
-  },
+  // {
+  //   img: "fa-fax",
+  //   title: "fax",
+  //   desc1: "Support@Shopcart.com",
+  //   desc2: "info@shopcart.com",
+  // },
 ];
 
-const ContactDetail = ({ img, title, desc1, desc2 }) => {
+const ContactDetail = ({ img, title, desc1, desc2, desc3 = '', desc4 = '' }) => {
   return (
     <li>
       <div className="contact-icon">
@@ -39,6 +39,8 @@ const ContactDetail = ({ img, title, desc1, desc2 }) => {
       <div className="media-body">
         <p>{desc1}</p>
         <p>{desc2}</p>
+        <p>{desc3}</p>
+        <p>{desc4}</p>
       </div>
     </li>
   );
@@ -66,6 +68,8 @@ const Contact = () => {
                         title={data.title}
                         desc1={data.desc1}
                         desc2={data.desc2}
+                        desc3={data.desc3}
+                        desc4={data.desc4}
                       />
                     );
                   })}

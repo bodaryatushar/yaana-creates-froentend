@@ -18,7 +18,6 @@ const GET_PRODUCTS = gql`
         title
         description
         type
-        brand
         category
         price
         new
@@ -76,6 +75,7 @@ const TabContent = ({
                   src={"/assets/images/empty-search.jpg"}
                   className="img-fluid mb-4 mx-auto"
                   alt=""
+                  style={{height: '350px', width: '255px'}}
                 />
                 <h3>
                   <strong>Your Cart is Empty</strong>
@@ -150,7 +150,7 @@ const SpecialProducts = ({
     },
   });
 
-  console.log("data product 154",data);
+  console.log("data product 154",data, activeTab);
 
   return (
     <div>
@@ -188,8 +188,8 @@ const SpecialProducts = ({
                 FEATURED{" "}
               </Tab>
               <Tab
-                className={activeTab == "furniture" ? "active" : ""}
-                onClick={() => setActiveTab("furniture")}
+                className={activeTab == "featured" ? "active" : ""}
+                onClick={() => setActiveTab("featured")}
               >
                 SPECIAL
               </Tab>

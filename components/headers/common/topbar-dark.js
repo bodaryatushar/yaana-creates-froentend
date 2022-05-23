@@ -17,10 +17,10 @@ const TopBarDark = ({ topClass, fluid }) => {
           <Col lg="6">
             <div className="header-contact">
               <ul>
-                <li>Welcome to Our store Multikart</li>
+                <li>Welcome to Our store Yaana Creats</li>
                 <li>
-                  <i className="fa fa-phone" aria-hidden="true"></i>Call Us: 123
-                  - 456 - 7890
+                  <i className="fa fa-phone" aria-hidden="true"></i>Call Us: +91 909
+                  - 913 - 2531
                 </li>
               </ul>
             </div>
@@ -46,9 +46,6 @@ const TopBarDark = ({ topClass, fluid }) => {
                     <Link href={`/page/account/register`}>
                       <a>Register</a>
                     </Link>
-                  </li>
-                  <li onClick={() => firebaseLogout()}>
-                    <a>Logout</a>
                   </li>
                 </ul>
               </li>

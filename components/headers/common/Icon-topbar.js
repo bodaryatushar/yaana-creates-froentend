@@ -33,10 +33,10 @@ const IconTopbar = () => {
             <Col sm="6">
               <div className="header-contact">
                 <ul>
-                  <li>Welcome to Our store Multikart</li>
+                  <li>Welcome to Our store Yaana Creats</li>
                   <li>
-                    <i className="fa fa-phone" aria-hidden="true"></i>Call Us:
-                    123 - 456 - 7890
+                    <i className="fa fa-phone" aria-hidden="true"></i>Call Us: +91 909
+                  - 913 - 2531
                   </li>
                 </ul>
               </div>

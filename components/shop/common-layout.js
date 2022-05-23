@@ -9,7 +9,7 @@ const CommonLayout = ({ children, title, parent, subTitle }) => {
     <>
       <Helmet>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href={"/assets/images/favicon/1.png"} />
+        <link rel="icon" type="image/x-icon" href={"/assets/images/icon/logo.png"} />
       </Helmet>
       <HeaderOne topClass="top-header" logoName="logo.png" />
       <Breadcrubs title={title} parent={parent} subTitle={subTitle} />
