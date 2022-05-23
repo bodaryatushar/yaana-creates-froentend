@@ -27,8 +27,8 @@
 
 
 const nextConfig = {
-  env: {
-    API_URL: "http://localhost:8000/graphql",
+  env: { 
+    API_URL: "https://api-umber-tau.vercel.app/graphql",
   },
   webpack(config, options) {
     config.module.rules.push({
