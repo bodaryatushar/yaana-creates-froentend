@@ -28,7 +28,7 @@
 
 const nextConfig = {
   env: { 
-    API_URL: "https://api-umber-tau.vercel.app/graphql",
+    API_URL: "https://yaana-creats-api.vercel.app/server.js",
   },
   webpack(config, options) {
     config.module.rules.push({
