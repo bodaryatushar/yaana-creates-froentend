@@ -28,7 +28,7 @@
 
 const nextConfig = {
   env: { 
-    API_URL: "https://yaana-creats-api.vercel.app/server.js",
+    API_URL: "https://api.yaanacreats.com/server.js",
   },
   webpack(config, options) {
     config.module.rules.push({
