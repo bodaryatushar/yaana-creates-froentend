@@ -4,7 +4,7 @@ module.exports = {
       compress: true,
       proxy: {
         '/graphql': {
-          target: 'https://yaana-creats-api.vercel.app/server.js',
+          target: 'https://api.yaanacreats.com/server.js',
           secure: false,
         },
       },
