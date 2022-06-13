@@ -12,8 +12,8 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
     link: new HttpLink({
-      uri: 'http://localhost:4000', // Server URL (must be absolute)
-      credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
+      uri: 'https://api.yaanacreats.com/server.js', // Server URL (must be absolute)
+      credentials: 'include', // Additional fetch() options like `credentials` or `headers`
       fetch,
     }),
     cache: new InMemoryCache({
