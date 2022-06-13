@@ -20,13 +20,7 @@ const Data = [
     img: "fa-envelope-o",
     title: "ADDRESS",
     desc1: "yaanacreats@gmail.com",
-  },
-  // {
-  //   img: "fa-fax",
-  //   title: "fax",
-  //   desc1: "Support@Shopcart.com",
-  //   desc2: "info@shopcart.com",
-  // },
+  }
 ];
 
 const ContactDetail = ({ img, title, desc1, desc2, desc3 = '', desc4 = '' }) => {
@@ -53,7 +47,7 @@ const Contact = () => {
           <Row className="section-b-space">
             <Col lg="7" className="map">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1605.811957341231!2d25.45976406005396!3d36.3940974010114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1550912388321"
+                src="https://www.google.com/maps/place/Avadh+Textile+Market/@21.1933821,72.8478587,17z/data=!4m12!1m6!3m5!1s0x3be04e5320202ff9:0x5dc7a7a21381de3f!2sAvadh+Textile+Market!8m2!3d21.1933771!4d72.8500474!3m4!1s0x3be04e5320202ff9:0x5dc7a7a21381de3f!8m2!3d21.1933771!4d72.8500474"
                 allowFullScreen
               ></iframe>
             </Col>
