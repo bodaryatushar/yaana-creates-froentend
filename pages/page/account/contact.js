@@ -46,10 +46,7 @@ const Contact = () => {
         <Container>
           <Row className="section-b-space">
             <Col lg="7" className="map">
-              <iframe
-                src="https://www.google.com/maps/place/Avadh+Textile+Market/@21.1933821,72.8478587,17z/data=!4m12!1m6!3m5!1s0x3be04e5320202ff9:0x5dc7a7a21381de3f!2sAvadh+Textile+Market!8m2!3d21.1933771!4d72.8500474!3m4!1s0x3be04e5320202ff9:0x5dc7a7a21381de3f!8m2!3d21.1933771!4d72.8500474"
-                allowFullScreen
-              ></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.9692093487706!2d72.8478587150315!3d21.193382087513683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e5320202ff9%3A0x5dc7a7a21381de3f!2sAvadh%20Textile%20Market!5e0!3m2!1sen!2sde!4v1655117636087!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </Col>
             <Col lg="5">
               <div className="contact-right">
