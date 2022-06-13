@@ -12,7 +12,7 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
     link: new HttpLink({
-      uri: 'https://api.yaanacreats.com/graphql', // Server URL (must be absolute)
+      uri: 'http://localhost:4000', // Server URL (must be absolute)
       credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
       fetch,
     }),
